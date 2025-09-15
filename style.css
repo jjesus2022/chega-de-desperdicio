@@ -103,7 +103,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
     /* Imagem de fundo real agora */
-    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('images/hero-background.jpg.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('images/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
     min-height: 400px;
     display: flex;
@@ -188,7 +188,7 @@ h1, h2, h3 {
 .problema-section-with-image::before {
     content: '';
     display: block;
-    background: url('images/problema-overview.png.png') no-repeat center top/contain; /* Imagem do problema */
+    background: url('images/problema-overview.png') no-repeat center top/contain; /* Imagem do problema */
     position: absolute;
     top: -50px; /* Ajuste para posicionar a imagem */
     left: 50%;
@@ -236,7 +236,7 @@ h1, h2, h3 {
 .solucoes-section-with-image::before {
     content: '';
     display: block;
-    background: url('images/solucoes-overview.png.png') no-repeat center top/contain; /* Imagem das soluções */
+    background: url('images/solucoes-overview.png') no-repeat center top/contain; /* Imagem das soluções */
     position: absolute;
     top: -50px; /* Ajuste para posicionar a imagem */
     left: 50%;
