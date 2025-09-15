@@ -1,0 +1,350 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #388E3C;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #388E3C;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.navbar .logo i {
+    margin-right: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4CAF50;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    /* Imagem de fundo real agora */
+    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* Info Cards */
+.info-cards {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.info-cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.info-cards .card {
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.info-cards .card .icon {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.info-cards .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.grey-bg {
+    background: #f9f9f9;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Problema Grid */
+.problema-section-with-image {
+    position: relative;
+    padding-top: 200px; /* Espaço para a imagem */
+}
+
+.problema-section-with-image::before {
+    content: '';
+    display: block;
+    background: url('images/problema-overview.png') no-repeat center top/contain; /* Imagem do problema */
+    position: absolute;
+    top: -50px; /* Ajuste para posicionar a imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Largura da imagem */
+    max-width: 600px; /* Largura máxima da imagem */
+    height: 300px; /* Altura da imagem */
+    z-index: 1;
+}
+
+
+.problema-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Para garantir que o texto fique acima da imagem de fundo */
+}
+
+.problema-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.problema-item .icon-large {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.problema-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Soluções Grid */
+.solucoes-section-with-image {
+    position: relative;
+    padding-top: 200px; /* Espaço para a imagem */
+}
+
+.solucoes-section-with-image::before {
+    content: '';
+    display: block;
+    background: url('images/solucoes-overview.png') no-repeat center top/contain; /* Imagem das soluções */
+    position: absolute;
+    top: -50px; /* Ajuste para posicionar a imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Largura da imagem */
+    max-width: 900px; /* Largura máxima da imagem */
+    height: 300px; /* Altura da imagem */
+    z-index: 1;
+}
+
+.solucoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Para garantir que o texto fique acima da imagem de fundo */
+}
+
+.solucao-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.solucao-item .icon-medium {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.solucao-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #4CAF50;
+}
+
+footer i.fa-heart {
+    color: #e74c3c; /* Coração vermelho */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .problema-section-with-image::before,
+    .solucoes-section-with-image::before {
+        top: 0; /* Ajuste para telas menores */
+        height: 150px;
+        width: 100%;
+        background-size: contain; /* Garante que a imagem se ajuste */
+    }
+
+    .problema-section-with-image,
+    .solucoes-section-with-image {
+        padding-top: 180px; /* Menos espaço em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+}
